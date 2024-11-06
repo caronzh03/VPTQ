@@ -70,7 +70,17 @@ https://github.com/microsoft/VPTQ/releases
 
 #### build from source
 [Not Aavailbe if Release package]
-> Preparation steps that might be needed: Set up CUDA PATH.
+
+Set up `CUDA_HOME` environment variable.
+
+Replace `cuda-12.1` with your CUDA version. To find out which CUDA version your system runs, run `nvcc --version`.
+
+```bash
+export CUDA_HOME=/usr/local/cuda-12.1
+```
+
+Add CUDA to your PATH.
+
 ```bash
 export PATH=/usr/local/cuda-12/bin/:$PATH  # set dependent on your environment
 ```
